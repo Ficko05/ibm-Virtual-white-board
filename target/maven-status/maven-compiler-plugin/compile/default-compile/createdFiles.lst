@@ -1,0 +1,10 @@
+com\example\virtualwhiteboard\mappers\UserMapperImpl.class
+com\example\virtualwhiteboard\entitys\UserEntity.class
+com\example\virtualwhiteboard\mappers\UserMapper.class
+com\example\virtualwhiteboard\controller\WhiteBoardController.class
+com\example\virtualwhiteboard\controller\UsersController.class
+com\example\virtualwhiteboard\controller\DefaultController.class
+com\example\virtualwhiteboard\dto\UserDto.class
+com\example\virtualwhiteboard\service\UserService.class
+com\example\virtualwhiteboard\VirtualWhiteBoardApplication.class
+com\example\virtualwhiteboard\repository\UserRepository.class

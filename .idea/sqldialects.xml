@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/changelog/include/001-create-table-salutations.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/changelog/include/002-create-table-users.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/changelog/include/004-create-table-post_table.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/changelog/include/005-populate-table-salutations.sql" dialect="GenericSQL" />
+  </component>
+</project>
