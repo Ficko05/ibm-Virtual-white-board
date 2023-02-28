@@ -19,6 +19,7 @@ I used Liquibase to migrate all the SQL tables, and soon as you run the project 
 I choose to create the application in Java spring boot since I have a deeper understanding and knowledge of the Spring framework.
 Altho spring shines in distributed systems architecture, it is still a viable choice for monolithic applications.
 
+#### ER-Diagram:
 
 Here is the ER diagram I made for Virtual white board, there were many iterations, and I'm not totally satisfied.
 
