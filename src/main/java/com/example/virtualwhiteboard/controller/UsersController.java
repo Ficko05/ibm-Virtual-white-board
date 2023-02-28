@@ -24,7 +24,7 @@ public class UsersController {
     UserService userService;
 
     // returns a list of all users
-    @GetMapping("/users")
+    @GetMapping("/")
     public List<UserEntity> getUsers(){
         return userRepository.findAll();
     }
@@ -44,6 +44,14 @@ public class UsersController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .location(URI.create("/users/user"+ result.getId()))
                 .body(result);
+
+    }
+
+    // update user by id
+    @PutMapping("/update/{userId}")
+    public ResponseEntity<UserDto> updateUserById(@PathVariable long userId,
+                                             @RequestBody UserDto dto){
+        return ResponseEntity.ok(userService.updateUserBydId(dto, userId));
 
     }
 

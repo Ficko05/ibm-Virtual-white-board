@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+import java.util.Set;
+
 @Data
 @NoArgsConstructor
 @Table(name = "users")
@@ -27,6 +30,11 @@ public class UserEntity {
 
     @Column(name = "salutations_id")
     private int salutationsId;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "fk_user_id", referencedColumnName = "id")
+    private List<PostEntity> post;
+
 
 
 

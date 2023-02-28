@@ -8,7 +8,7 @@ import java.util.Date;
 
 @Data
 @NoArgsConstructor
-@Table(name = "users")
+@Table(name = "post_table")
 @Entity
 public class PostEntity {
 
@@ -27,10 +27,16 @@ public class PostEntity {
     private byte[] image;
 
     @Column(name = "users_id")
-    private long userId;
+    private long usersId;
 
     @Column(name = "time_stamp")
     private Date timeStamp;
+
+    @Column(name = "private_toggle")
+    private boolean privateToggle;
+
+
+
 
 
 }

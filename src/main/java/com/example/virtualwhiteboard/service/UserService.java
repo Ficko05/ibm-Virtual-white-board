@@ -16,6 +16,16 @@ public class UserService {
 
     private final UserMapper userMapper = UserMapper.INSTANCE;
 
+    @Transactional
+    public UserDto updateUserBydId(UserDto newDto, long id ) {
+        return userRepository.findById(id)
+                .map(entity -> {
+                    userMapper.replaceEntity(newDto,entity);
+                    entity = userRepository.save(entity);
+                    return userMapper.toDto(entity);
+                }).orElseThrow();
+    }
+
     @Transactional(readOnly = true)
     public UserDto get(long id){
         return userRepository.findById(id)
